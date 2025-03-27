@@ -1,0 +1,136 @@
+/* client/src/App.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+  padding: 15px;
+  margin: 10px 0;
+  background: #e8f5e9;
+  color: #388e3c;
+  border-radius: 8px;
+  border-left: 5px solid #388e3c;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.alert:hover {
+  transform: translateX(10px);
+}
+
+.task-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.task-form button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #007bff, #00bcd4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.task-form button:hover {
+  background: linear-gradient(135deg, #0056b3, #00a2b7);
+  transform: translateY(-2px);
+}
+
+.task-list {
+  display: grid;
+  gap: 18px;
+}
+
+.task-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.status.pending {
+  background: #ffeb3b;
+  color: #f57c00;
+}
+
+.status.completed {
+  background: #81c784;
+  color: #388e3c;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.actions button {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.actions button:first-child {
+  background: #ff9800;
+  color: white;
+}
+
+.actions button:first-child:hover {
+  background: #f57c00;
+  transform: translateY(-2px);
+}
+
+.actions button:last-child {
+  background: #e91e63;
+  color: white;
+}
+
+.actions button:last-child:hover {
+  background: #c2185b;
+  transform: translateY(-2px);
+}
